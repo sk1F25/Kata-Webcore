@@ -79,38 +79,38 @@ a {
 }
 
 .nav-button__icon-burger {
-    background-image: url("../img/burger.svg");
+    background-image: url("img/burger.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .nav-button__icon-request {
-    background-image: url("../img/checkstatus.svg");
+    background-image: url("img/checkstatus.svg");
     background-position: center;
     background-repeat: no-repeat;
     margin-right: 0;
 }
 
 .nav-button__icon-repair {
-    background-image: url("../img/repair.svg");
+    background-image: url("img/repair.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .nav-button__icon-chat {
-    background-image: url("../img/chat.svg");
+    background-image: url("img/chat.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .nav-button__icon-profile {
-    background-image: url("../img/profile.svg");
+    background-image: url("img/profile.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .nav-button__icon-call {
-    background-image: url("../img/call.svg");
+    background-image: url("img/call.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -318,14 +318,14 @@ a {
     }
 
     .nav-button__icon-request {
-        background-image: url("../img/checkstatus.svg");
+        background-image: url("img/checkstatus.svg");
         background-position: center;
         background-repeat: no-repeat;
         margin-right: 0;
     }
 
     .nav-button__icon-repair {
-        background-image: url("../img/repair.svg");
+        background-image: url("img/repair.svg");
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -367,7 +367,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(../img/read-more-icon.svg);
+    background-image: url(img/read-more-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 7px 10px;
