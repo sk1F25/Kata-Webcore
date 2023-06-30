@@ -367,7 +367,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(img/read-more-icon.svg);
+    background-image: url(./img/read-more-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 7px 10px;
