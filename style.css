@@ -29,6 +29,20 @@ a {
     font-weight: normal;
 }
 
+li, ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    font: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
 .header {
     display: flex;
     justify-content: center;
