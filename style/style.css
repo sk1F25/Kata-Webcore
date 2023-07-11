@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'TT Lakes';
-    src: url('fonts/TTLakes-Regular.woff') format('woff');
+    src: url('TTLakes-Regular.woff') format('woff');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('fonts/TTLakes-Bold.woff') format('woff');
+    src: url('TTLakes-Bold.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'TT Lakes';
-    src: url('fonts/TTLakes-Medium.woff') format('woff');
+    src: url('TTLakes-Medium.woff') format('woff');
     font-weight: 500;
 }
 
@@ -381,7 +381,7 @@ button {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(./img/read-more-icon.svg);
+    background-image: url(../img/read-more-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 7px 10px;
