@@ -344,6 +344,18 @@ button {
         background-repeat: no-repeat;
     }
 
+    .nav-button__icon-close {
+        background-image: url("img/close.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .nav-button__icon-search {
+        background-image: url("img/search.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .menu-slider {
         display: flex;
         flex-wrap: wrap;
