@@ -1,7 +1,7 @@
 .sidebar {
     width: 320px;
     height: 100vh;
-    box-shadow: 16px 0 52 0px rgba(14, 24, 80, 0.20), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.20), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
 }
 
 .sidebar-header {
