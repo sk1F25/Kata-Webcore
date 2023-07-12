@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
+    /**/
     width: 320px;
     min-height: 100%;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.20), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
