@@ -2,6 +2,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 320px;
     height: 100vh;
     box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.20), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
@@ -10,8 +11,7 @@
 
 .sidebar-header {
     display: flex;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 16px 24px;
     align-items: center;
     gap: 16px;
     height: 110px;
@@ -106,17 +106,6 @@
 .sidebar-nav__item--active {
     color: #7E7E82;
 }
-
-/*.sidebar-nav__item--active::before {*/
-/*    display: inline-block;*/
-/*    width: 4px;*/
-/*    height: 32px;*/
-/*    background-color: #41F6D7;*/
-/*    content: "";*/
-/*    border-radius: 0 5px 5px 0;*/
-/*    position: relative;*/
-/*    left: 0;*/
-/*}*/
 
 .sidebar-footer {
     display: flex;
