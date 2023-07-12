@@ -27,6 +27,7 @@ a {
     padding: 0;
     font-family: 'TT Lakes', Arial, sans-serif;
     font-weight: normal;
+    height: fit-content;
 }
 
 li, ul {
@@ -79,6 +80,18 @@ button {
 .nav-button {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.nav-button:hover .nav-button__icon {
+    transform: scale(1.1);
+    transition: 500ms;
+    filter: drop-shadow(2px 2px 4px rgba(255, 62, 121, 0.5));
+}
+
+.nav-button:hover .nav-button__label {
+    color: #FF3E79;
+    transition: 500ms;
 }
 
 .nav-button__icon {
