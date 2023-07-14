@@ -23,11 +23,13 @@ a {
 
 .body {
     background: #F8F8F8;
-    margin: 0;
     padding: 0;
     font-family: 'TT Lakes', Arial, sans-serif;
     font-weight: normal;
     height: fit-content;
+    max-width: 1121px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 li, ul {
@@ -77,66 +79,65 @@ button {
     gap: 16px;
 }
 
-.nav-button {
+.btn {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-.nav-button:hover .nav-button__icon {
+.btn:hover .btn__icon {
     transform: scale(1.1);
     transition: 500ms;
     filter: drop-shadow(2px 2px 4px rgba(255, 62, 121, 0.5));
 }
 
-.nav-button:hover .nav-button__label {
+.btn:hover .btn__label {
     color: #FF3E79;
     transition: 500ms;
 }
 
-.nav-button__icon {
+.btn__icon {
     background-color: #FF3E79;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-.nav-button:last-child {
+.btn:last-child {
     margin-right: 0;
 }
 
-.nav-button__icon-burger {
+.btn__icon-burger {
     background-image: url("img/burger.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.nav-button__icon-request {
+.btn__icon-request {
     background-image: url("img/checkstatus.svg");
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 0;
 }
 
-.nav-button__icon-repair {
+.btn__icon-repair {
     background-image: url("img/repair.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.nav-button__icon-chat {
+.btn__icon-chat {
     background-image: url("img/chat.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.nav-button__icon-profile {
+.btn__icon-profile {
     background-image: url("img/profile.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.nav-button__icon-call {
+.btn__icon-call {
     background-image: url("img/call.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +145,7 @@ button {
 
 /* Скрыть три иконки на мобилке */
 @media screen and (max-width: 767px) {
-    .nav-button-chat, .nav-button-profile, .nav-button-call, .header-menu__divider_hidden-mobile {
+    .btn-chat, .btn-profile, .btn-call, .header-menu__divider_hidden-mobile {
         display: none;
     }
 }
@@ -162,14 +163,14 @@ button {
 
 .title {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 24px 16px 24px 0;
     height: 40px;
 }
 
 
-.title__h1 {
+.title__text {
     color: #1B1C21;
     font-size: 28px;
     font-weight: 700;
@@ -187,6 +188,12 @@ button {
 
 .title-menu {
     display: none;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding-right: 16px;
+    font-weight: 500;
+    gap: 32px;
 }
 
 .nav-menu {
@@ -195,7 +202,7 @@ button {
 
 .menu-slider {
     display: flex;
-    margin-left: 16px;
+    padding-left: 16px;
     white-space: nowrap;
     overflow-x: auto;
 }
@@ -331,51 +338,18 @@ button {
 
     .title-menu {
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-left: auto;
-        padding-right: 16px;
-        font-weight: 500;
-        gap: 32px;
     }
 
-    .nav-button__label {
+    .btn__label {
         display: inline-block;
         margin: 8px;
     }
 
-    .nav-button__icon-request {
-        background-image: url("img/checkstatus.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-right: 0;
-    }
-
-    .nav-button__icon-repair {
-        background-image: url("img/repair.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-
     .menu-slider {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 16px;
+        padding-left: 32px;
         white-space: nowrap;
-    }
-
-    .menu-slider__item {
-        display: flex;
-        font-size: 16px;
-        padding: 8px 16px;
-        color: #7E7E82;
-    }
-
-    .menu-slider__item_active {
-        background-color: #fff;
-        border: 2px solid #B8FFEC;
-        border-radius: 6px;
     }
 }
 
@@ -389,6 +363,7 @@ button {
     font-size: 16px;
     line-height: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .main-content__read-more-icon {
