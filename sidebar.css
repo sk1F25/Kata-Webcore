@@ -151,3 +151,7 @@
     color: #FF3E79;
     transition: 500ms;
 }
+
+.btn-chat, .btn-profile, .btn-call {
+    display: flex;
+}
