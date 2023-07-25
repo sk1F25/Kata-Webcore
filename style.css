@@ -30,6 +30,7 @@ a {
     max-width: 1121px;
     min-width: 320px;
     margin: 0 auto;
+    top: 0;
 }
 
 li, ul {
@@ -354,7 +355,7 @@ button {
 }
 
 
-.main-content__read-more {
+.btn__read-more {
     display: flex;
     background: none;
     border: none;
@@ -366,7 +367,7 @@ button {
     cursor: pointer;
 }
 
-.main-content__read-more-icon {
+.btn__read-more-icon {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -375,11 +376,6 @@ button {
     background-repeat: no-repeat;
     background-size: 7px 10px;
     margin-right: 8px;
-}
-
-.main-content__read-more-link {
-    display: flex;
-    align-items: center;
 }
 
 .image-container {
