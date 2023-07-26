@@ -2,61 +2,60 @@ const readMoreButton = document.querySelector('.btn__read-more');
 const readMoreButtonText = document.querySelector('.btn__read-more-text');
 
 let swiper = 0;
+let resizeTimeout = 0;
 
 function swiperInitialize() {
-    swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 'auto',
-        spaceBetween: 16,
-        observer: true,
-        observeParents: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+    if (!swiper) {
+        console.log('Swiper init');
+        swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    }
 }
 
 function swiperOff() {
+    console.log('swiper off');
     if (swiper) {
         swiper.destroy();
         swiper = 0;
     }
 }
 
-window.onload = function () {
-    if (window.matchMedia('(max-width: 767px)').matches) {
-        swiperInitialize();
-    } else {
-        swiperOff();
-    }
-};
+function handleResize() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+        if (window.innerWidth < 767) {
+            swiperInitialize();
+        } else {
+            swiperOff();
+        }
+    }, 500); // Задержка времени перед инициализацией Swiper
+}
 
-window.addEventListener('resize', function () {
-    if (window.innerWidth < 767) {
-        swiperInitialize()
-    } else {
-        swiperOff()
-    }
-});
+window.addEventListener('resize', handleResize);
+
+// Вызываем функцию инициализации Swiper при загрузке страницы
+handleResize();
 
 readMoreButton.addEventListener('click', function () {
-    const hiddenCards = document.querySelectorAll('.hidden-item');
+    const brandBlock = document.querySelector('.brand-block');
     switch (readMoreButtonText.textContent) {
         case 'Показать все':
             readMoreButtonText.textContent = 'Скрыть';
-            for (let i = 0; i < hiddenCards.length; i++) {
-                let element = hiddenCards[i];
-                element.classList.remove('brand-list__item--hidden');
-            }
+            brandBlock.classList.add('brand-block--extended');
             break;
         case 'Скрыть':
             readMoreButtonText.textContent = 'Показать все';
-            for (let i = 0; i < hiddenCards.length; i++) {
-                let element = hiddenCards[i];
-                element.classList.add('brand-list__item--hidden');
-            }
+            brandBlock.classList.remove('brand-block--extended');
             break;
     }
 });
