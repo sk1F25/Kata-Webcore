@@ -25,6 +25,7 @@ function swiperInitialize() {
 function swiperOff() {
     console.log('swiper off');
     if (swiper) {
+        swiper.disable();
         swiper.destroy();
         swiper = 0;
     }
