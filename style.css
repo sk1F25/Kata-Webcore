@@ -378,6 +378,15 @@ button {
     margin-right: 8px;
 }
 
+.btn__read-more-text {
+    color: #1B1C21;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}
+
 .image-container {
     width: 100%;
 }

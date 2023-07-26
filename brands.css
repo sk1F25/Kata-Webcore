@@ -102,6 +102,24 @@
 }
 
 @media screen and (min-width: 768px) {
+    .swuper {
+        display: flex;
+    }
+
+    .swuper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 24px;
+        padding-top: 24px;
+        height: auto;
+        transition: height 300ms ease-in;
+    }
+
+    .brand__swiper {
+        width: 226px !important;
+        margin: 0 24px 16px 0;
+    }
+
     .block-title__text {
         margin-left: 24px;
     }
@@ -126,14 +144,18 @@
         width: 224px;
     }
 
-    .swiper-block {
-        display: none;
-    }
+    /*.swiper-block {*/
+    /*    display: none;*/
+    /*}*/
 }
 
 @media screen and (min-width: 1120px) {
     .block-title__text {
         margin-left: 32px;
+    }
+
+    .brand-list {
+        gap: 16px 32px;
     }
 
     .brand-block {
@@ -142,6 +164,10 @@
 
     .btn-read-more {
         margin-left: 32px;
+    }
+
+    .brand-list__item {
+        width: 240px;
     }
 }
 
