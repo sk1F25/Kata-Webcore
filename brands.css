@@ -37,9 +37,6 @@
     margin-top: 10px;
 }
 
-.btn__read-more-icon {
-    transition: transform 0.5s;
-}
 
 .brand-list--extended {
     max-height: 400px !important;

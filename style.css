@@ -376,6 +376,7 @@ button {
     background-repeat: no-repeat;
     background-size: 7px 10px;
     margin-right: 8px;
+    transition: transform 0.5s;
 }
 
 .btn__read-more-text {
@@ -385,6 +386,10 @@ button {
     font-weight: 500;
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
+}
+
+.btn__read-more:hover .btn__read-more-text {
+    opacity: 0.7;
 }
 
 .image-container {
