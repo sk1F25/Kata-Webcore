@@ -28,6 +28,10 @@
     margin-left: 16px;
 }
 
+.swiper-block {
+    overflow: hidden;
+}
+
 .read-more-block {
     display: none;
     margin-top: 10px;
