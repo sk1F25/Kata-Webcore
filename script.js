@@ -5,12 +5,8 @@ let swiper = 0;
 
 function swiperInitialize() {
     swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
         slidesPerView: 'auto',
         spaceBetween: 16,
-        observer: true,
-        observeParents: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -21,6 +17,7 @@ function swiperInitialize() {
 function swiperOff() {
     if (swiper) {
         swiper.destroy();
+        swiper.disable();
         swiper = 0;
     }
 }
