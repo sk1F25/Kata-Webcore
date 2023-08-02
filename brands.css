@@ -99,6 +99,7 @@
         max-height: 170px;
         max-width: 800px;
         gap: 16px 24px;
+        transition: max-height 0.5s linear;
     }
 
     .brand-list__item, .brand-list-slide, .swiper-slide {
